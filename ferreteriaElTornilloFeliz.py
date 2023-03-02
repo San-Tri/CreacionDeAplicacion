@@ -9,7 +9,7 @@ class Product:
         self.wind.title('Products application')
         # Crear un frame dentro de contenedor
         frame = LabelFrame(self.wind, text='Ferreteria El Tornillo Feliz')
-        frame.grid(row=0, column=0, columnspan=3, pady=20)
+        frame.grid(row=0, column=0, columnspan=3, pady=10)
         
         # Entrada para un nombre:
         Label(frame, text='DNI  ').grid(row=1, column=0)
@@ -27,7 +27,7 @@ class Product:
         
         Label(frame, text="Direccion ").grid(row=3, column=0)
         self.direccion = Entry(frame)
-        self.direccion.grid(row=3, column=1)
+        self.direccion.grid(row=3, column=1, columnspan=3, sticky=W + E)
         
         Label(frame, text="Telefono ").grid(row=4, column=0)
         self.telefono = Entry(frame)
