@@ -14,6 +14,7 @@ class Product:
         # Entrada para un nombre:
         Label(frame, text='DNI  ').grid(row=1, column=0)
         self.dni = Entry(frame)
+        self.dni.focus()
         self.dni.grid(row=1, column=1)
         
         # Colocar otro elemento:
@@ -27,11 +28,11 @@ class Product:
         
         Label(frame, text="Direccion ").grid(row=3, column=0)
         self.direccion = Entry(frame)
-        self.direccion.grid(row=3, column=1, columnspan=3, sticky=W + E)
+        self.direccion.grid(row=3, column=1, columnspan=3, sticky= W + E)
         
         Label(frame, text="Telefono ").grid(row=4, column=0)
         self.telefono = Entry(frame)
-        self.telefono.grid(row=4, column=1)
+        self.telefono.grid(row=4, column=1,columnspan=3, sticky= W + E)
 if __name__== '__main__' :
     window = Tk()
     application = Product(window)
