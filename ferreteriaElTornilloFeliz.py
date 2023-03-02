@@ -37,6 +37,26 @@ class Product:
         Label(frame, text="Cod_Pod").grid(row=5, column=0)
         self.codpod = Entry(frame)
         self.codpod.grid(row=6, column=0, padx=10, pady=10, sticky=W)
+        
+        Label(frame, text="Descripcion").grid(row=5, column=1)
+        self.descripcion = Entry(frame)
+        self.descripcion.grid(row=6, column=1, padx=5, pady=10, sticky=W)
+        
+        Label(frame, text="Unidad").grid(row=5, column=2)
+        self.unidad = Entry(frame)
+        self.unidad.grid(row=6, column=2, padx=10, pady=10, sticky=W)
+        
+        Label(frame, text="Cantidad").grid(row=5, column=3)
+        self.cantidad = Entry(frame)
+        self.cantidad.grid(row=6, column=3, padx=10, pady=10, sticky=W)
+        
+        Label(frame, text="Precio").grid(row=5, column=4)
+        self.precio = Entry(frame)
+        self.precio.grid(row=6, column=4, padx=10, pady=10, sticky=W)
+        
+        Label(frame, text="Subtotal").grid(row=5, column=5)
+        self.subtotal = Entry(frame)
+        self.subtotal.grid(row=6, column=5, padx=10, pady=10, sticky=W)
 
 if __name__== '__main__' :
     window = Tk()
