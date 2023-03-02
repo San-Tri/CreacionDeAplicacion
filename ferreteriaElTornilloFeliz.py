@@ -33,6 +33,11 @@ class Product:
         Label(frame, text="Telefono ").grid(row=4, column=0)
         self.telefono = Entry(frame)
         self.telefono.grid(row=4, column=1,columnspan=3, sticky= W + E)
+        
+        Label(frame, text="Cod_Pod").grid(row=5, column=0)
+        self.codpod = Entry(frame)
+        self.codpod.grid(row=6, column=0, padx=10, pady=10, sticky=W)
+
 if __name__== '__main__' :
     window = Tk()
     application = Product(window)
