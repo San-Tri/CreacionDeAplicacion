@@ -23,7 +23,7 @@ class Product:
         
         Label(frame, text="Nombres ").grid(row=2, column=2)
         self.nombre = Entry(frame)
-        self.nombre.grid(row=2, column=1)
+        self.nombre.grid(row=2, column=3)
 if __name__== '__main__' :
     window = Tk()
     application = Product(window)
