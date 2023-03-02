@@ -8,13 +8,18 @@ class Product:
         self.wind = window
         self.wind.title('Products application')
         # Crear un frame dentro de contenedor
-        frame = LabelFrame(self.wind, text='Registre un nuevo producto.')
+        frame = LabelFrame(self.wind, text='Ferreteria El Tornillo Feliz')
         frame.grid(row=0, column=0, columnspan=3, pady=20)
         
-        # Entrada para un nombre con input:
-        Label(frame, text='Nombre: ').grid(row=1, column=0)
-        self.nombre = Entry(frame)
-        self.nombre.grid(row=1, column=1)
+        # Entrada para un nombre:
+        Label(frame, text='DNI  ').grid(row=1, column=0)
+        self.dni = Entry(frame)
+        self.dni.grid(row=1, column=1)
+        
+        # Colocar otro elemento:
+        Label(frame, text= 'Apellidos ').grid(row =2, column=0)
+        self.apellido = Entry(frame)
+        self.apellido.grid(row=2, column=1)
 if __name__== '__main__' :
     window = Tk()
     application = Product(window)
