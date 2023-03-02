@@ -20,6 +20,10 @@ class Product:
         Label(frame, text= 'Apellidos ').grid(row =2, column=0)
         self.apellido = Entry(frame)
         self.apellido.grid(row=2, column=1)
+        
+        Label(frame, text="Nombres ").grid(row=2, column=2)
+        self.nombre = Entry(frame)
+        self.nombre.grid(row=2, column=1)
 if __name__== '__main__' :
     window = Tk()
     application = Product(window)
